@@ -1,0 +1,93 @@
+.footer {
+	.content {
+		border-top: 2px solid palevioletred;
+		display: flex;
+		justify-content: space-around;
+		height: 70px;
+		align-items: center;
+
+		p {
+			color: palevioletred;
+		}
+
+		.icons {
+			display: flex;
+			gap: 1rem;
+
+			.span {
+				cursor: pointer;
+				font-family: "Roboto", sans-serif;
+				font-weight: 100;
+				font-size: 15px;
+				letter-spacing: 1px;
+				color: palevioletred;
+			}
+		}
+	}
+}
+
+// Медиа-суроолор
+@media (max-width: 1024px) {
+	.content {
+		flex-direction: column;
+		height: auto;
+		padding: 20px 0;
+
+		img {
+			width: 50px;
+		}
+
+		.icons {
+			margin-top: 10px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.content {
+		padding: 15px 0;
+		.icons {
+			gap: 0.75rem;
+		}
+	}
+}
+
+@media (max-width: 440px) {
+	.content {
+		justify-content: center;
+		gap: 1rem;
+		flex-direction: column;
+		height: auto;
+		text-align: center;
+		img{
+			width: 270px;
+		}
+
+		p {
+			margin-bottom: 10px;
+			font-size: 15px;
+		}
+
+		.icons {
+			gap: 0.5rem;
+		}
+	}
+}
+
+@media (max-width: 375px) {
+	.content {
+		padding: 10px 0;
+		img{
+			width: 250px;
+		}
+		p{
+			font-size: 15px;
+		}
+		.icons {
+			gap: 0.4rem;
+			.span {
+				font-size: 13px;
+			}
+		}
+	}
+}

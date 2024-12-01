@@ -1,0 +1,8 @@
+version: '3.9'
+
+services:
+  frontend:
+    image: fashion-main
+    container_name: frontend_new
+    ports:
+      - 8080:80
